@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+# Fictional example. Replace every claim before using this as your resume.
+cv:
+  name: Morgan Example
+  headline: Backend Software Engineer
+  location: Example City
+  email: morgan@example.com
+  website: https://example.com
+  sections:
+    summary:
+      - Backend engineer building database services, deployment checks, and reliable reporting systems.
+    experience:
+      - company: Example Orchard Software
+        position: Software Engineer
+        start_date: 2023-01
+        end_date: present
+        location: Remote
+        highlights:
+          - Built a scheduling service that lets coordinators move bookings without editing database records.
+          - Reduced a nightly report from 25 minutes to 8 minutes by batching database queries.
+          - Added deployment checks and recovery instructions used by a team of six engineers.
+      - company: Example Lantern Studio
+        position: Junior Software Engineer
+        start_date: 2021-06
+        end_date: 2022-12
+        highlights:
+          - Built an accessible inventory dashboard with keyboard navigation and clear validation errors.
+          - Added integration tests for the checkout flow and documented common support issues.
+    projects:
+      - name: '[Community Schedule](https://example.com/projects/schedule)'
+        highlights:
+          - Created a volunteer shift planner with CSV export, conflict checks, and automated tests.
+      - name: '[Field Notes](https://example.com/projects/notes)'
+        highlights:
+          - Built a searchable notebook that stores entries locally and exports plain text.
+    skills:
+      - label: Languages
+        details: Python, TypeScript, SQL
+      - label: Tools
+        details: PostgreSQL, Docker, Git, Linux
+      - label: Practices
+        details: Automated testing, accessible interfaces, technical documentation
+    education:
+      - institution: Example Lakeside University
+        area: Computer Science
+        degree: BS
+        start_date: 2017-09
+        end_date: 2021-05
+# Uses the built-in theme; no copied theme templates or source-relative symlinks.
+design:
+  theme: engineeringclassic
+  page:
+    size: us-letter
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.6in
+    right_margin: 0.6in
+    show_footer: false
+    show_top_note: false
+  typography:
+    alignment: left
+    font_size:
+      body: 10pt
+      name: 24pt
+    bold:
+      name: true
+      section_titles: true
+  header:
+    space_below_name: 0.25cm
+    space_below_connections: 0.35cm
+    connections:
+      show_icons: false
+      separator: '|'
+  sections:
+    show_time_spans_in: []
+settings:
+  current_date: '2026-01-01'
